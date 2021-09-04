@@ -2,6 +2,7 @@
 layout: post
 title:  Changes to Error Suppression in PHP 8
 date:   2021-08-04 10:32:00 -0400
+author: Brandon Olivares
 categories: [php8, error-handling]
 ---
 

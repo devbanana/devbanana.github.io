@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Brandon headshot](/images/headshot.jpg)
+![Brandon headshot](/assets/images/headshot.jpg)
 
 My name is Brandon Olivares and I live with my wife Christine in Pennsylvania. We also have a Samoyed named Gino.
 

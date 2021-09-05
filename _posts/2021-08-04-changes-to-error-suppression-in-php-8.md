@@ -112,6 +112,7 @@ Our original code triggers `E_USER_WARNING` (though we're pretending it's `E_WAR
 So if we want to check if `E_WARNING` (0010) is enabled, then we use bitwise and to compare that with the output of `error_reporting()`.
 
 If the output is 0, we know our error is suppressed and can act accordingly. Hence we have:
+
 ```php
     // ...
     if (!(error_reporting() & $errno)) {

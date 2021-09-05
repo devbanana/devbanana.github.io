@@ -30,6 +30,9 @@ twitter_username: devbanana
 github_username: devbanana
 show_excerpts: true
 
+disqus:
+  shortname: brandon-olivares
+
 # Seo info
 twitter:
   username: devbanana

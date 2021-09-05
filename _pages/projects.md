@@ -9,7 +9,7 @@ Below is a list of the public projects for which I am an active developer.
 ## [PHP CS Fixer Config]
 
 This is my default php-cs-fixer rules I follow in my projects.
-it allows me to easily include my rules into any new project,
+It allows me to easily include my rules into any new project,
 and to only include the rules that are appropriate for the given PHP version.
 
 ## [YNAB Tools]

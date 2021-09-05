@@ -10,7 +10,7 @@ categories: [best-practices]
 
 As such, there's plenty of code that hasn't been updated for several years, and definitely does not follow best practices.
 
-One thing I've noticed that has become quite a pet peeve is returning booleans from methods.
+One thing I've noticed that has become quite a pet peeve is returning booleans from functions.
 
 In my opinion, there is **almost** never a reason to return a boolean. And a boolean should never be returned as an indication of success or failure.
 
@@ -147,8 +147,8 @@ I'm a proponent of design by contract.
 A function or method has a contract with its client.
 It expects its inputs to follow certain specifications (preconditions), and if those are valid, promises some particular output or result (postconditions).
 
-As the client of a method, I ask myself, "What do I need from this method?"
-Then as the developer of that method, I need to ensure it fulfills that requirement.
+As the client of a function, I ask myself, "What do I need from this function?"
+Then as the developer of that function, I need to ensure it fulfills that requirement.
 
 The `isEven()` function I showed first has a very simple contract. Given an integer (precondition), it will tell me whether that number is even (postcondition).
 
@@ -292,9 +292,9 @@ whereas if something fails, it'll fail fast, and loudly.
 
 In my opinion there's one case where booleans should be returned:
 
-When you ask yourself, "What do I need from this method?" and the needed information can be formulated as a yes or no answer.
+When you ask yourself, "What do I need from this function?" and the needed information can be formulated as a yes or no answer.
 
-What do I need from the `isEven()` method?<br>
+What do I need from the `isEven()` function?<br>
 To know whether a number is even (yes) or not (no).
 
 What do I need from the `User::isBirthdayOn()` method?<br>
@@ -304,7 +304,7 @@ If you can formulate the answer as yes or no, then you can return a boolean.
 
 Otherwise, you should return something more specialized.
 
-Or, in the example of a method that performs some effect, like the `notify()` method that sends an email,
+Or, in the example of a function that performs some effect, like the `notify()` method that sends an email,
 it should return void, because you don't need any information from it at all.
 
 This is the core of CQS, but that's a topic for another day.

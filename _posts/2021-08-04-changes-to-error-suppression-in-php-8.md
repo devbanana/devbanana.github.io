@@ -3,7 +3,7 @@ layout: post
 title:  Changes to Error Suppression in PHP 8
 date:   2021-08-04 10:32:00 -0400
 author: Brandon Olivares
-categories: [php8, error-handling]
+categories: php8 error-handling
 ---
 
 In my project at work I've been working on upgrading the code to a minimum of PHP 7.2, but also to work with PHP 8.

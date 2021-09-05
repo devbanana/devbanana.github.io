@@ -8,8 +8,10 @@ permalink: /about/
 
 My name is Brandon Olivares and I live with my wife Christine in Pennsylvania. We also have a Samoyed named Gino.
 
-I started my programming journey probably around the year 2000.
-It stemmed from a desire to learn how the Web worked, as I had just gotten my first computer a couple years prior.
+I've been blind since the age of 4, but thanks to the technology of screen reading software, got into computers when I was 9 or so.
+
+I started my programming journey probably around the year 2000, a couple years after getting my first computer.
+It stemmed from a desire to learn how the Web worked, as I had always been fascinated by it.
 
 As such I started with basic HTML/JavaScript, before briefly exploring PHP.
 I then spent some time dabbling in C/C++, Visual Basic, C#, and some other languages.

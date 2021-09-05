@@ -58,6 +58,7 @@ include:
 # Nav pages
 header_pages:
   - _pages/about.md
+  - _pages/projects.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

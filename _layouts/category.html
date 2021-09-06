@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="home">
+<div class="category">
   {%- if page.category -%}
-    <h1 class="page-heading">{{ page.category }}</h1>
+    <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {%- if site.categories[page.category].size > 0 -%}

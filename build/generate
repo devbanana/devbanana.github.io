@@ -1,0 +1,105 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Symfony\Component\String\Inflector\EnglishInflector;
+
+generate('categories');
+generate('tags');
+
+function generate(string $label): void
+{
+    $posts = findFiles('_posts/*.md');
+
+    $tags = [];
+
+    foreach ($posts as $post) {
+        $tags = array_merge($tags, processPost($post, $label));
+    }
+
+    $existingTags = array_map(
+        static fn (string $tag): string => basename($tag, '.md'),
+        findFiles("_{$label}/*.md")
+    );
+
+    $tags = array_filter($tags, static fn (string $tag): bool => !in_array($tag, $existingTags, true));
+
+    createTags($label, $tags);
+}
+
+/**
+ * @return string[]
+ */
+function findFiles(string $pattern): array
+{
+    $files = glob($pattern);
+    if ($files === false) {
+        return [];
+    }
+
+    return $files;
+}
+
+/**
+ * @return string[]
+ */
+function processPost(string $post, string $label): array
+{
+    $lines = file($post, FILE_IGNORE_NEW_LINES);
+    if ($lines === false) {
+        return [];
+    }
+
+    foreach ($lines as $line) {
+        $parts = explode(' ', $line);
+        if ($parts[0] === "{$label}:") {
+            return array_slice($parts, 1);
+        }
+    }
+
+    return [];
+}
+
+/**
+ * @param string[] $tags
+ */
+function createTags(string $label, array $tags): void
+{
+    $inflector = new EnglishInflector();
+
+    foreach ($tags as $tag) {
+        $title = toTitleCase(str_replace('-', ' ', $tag));
+        $singular = $inflector->singularize($label)[0];
+
+        $content = <<<EOT
+            ---
+            layout: {$singular}
+            title: {$title}
+            {$singular}: {$tag}
+            permalink: /{$singular}/{$tag}
+            ---
+
+            EOT;
+
+        file_put_contents("_{$label}/{$tag}.md", $content);
+        echo "Generated {$tag}\n";
+    }
+}
+
+function toTitleCase(string $text): string
+{
+    $words = ['A', 'An', 'The', 'And', 'Of', 'But', 'Or', 'For', 'Nor', 'With', 'On', 'At', 'To', 'From', 'By'];
+    $text = ucwords($text);
+
+    $wordsRegex = implode('|', $words);
+    $text = (string) preg_replace_callback(
+        sprintf('/\b(%s)\b/i', $wordsRegex),
+        static fn (array $matches): string => strtolower($matches[1]),
+        $text
+    );
+
+    return ucfirst($text);
+}

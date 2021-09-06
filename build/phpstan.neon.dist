@@ -1,0 +1,10 @@
+includes:
+  - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+  level: max
+  checkExplicitMixed: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  checkInternalClassCaseSensitivity: true
+  paths:
+    - generate

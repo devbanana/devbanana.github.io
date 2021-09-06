@@ -3,6 +3,7 @@ layout: post
 title: Please Don't Ignore Accessibility
 date: 2021-09-05 20:54:01 -0400
 categories: accessibility
+tags: aria
 ---
 
 I've been using a service called [IEX Cloud](https://iexcloud.io) for going on two years now. It's an API that allows me to fetch stock information programmatically.

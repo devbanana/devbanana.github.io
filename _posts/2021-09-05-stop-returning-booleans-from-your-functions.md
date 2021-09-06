@@ -3,7 +3,8 @@ layout: post
 title: Stop Returning Booleans From Your Functions
 date: 2021-09-05 01:58:00 -0400
 author: Brandon Olivares
-categories: [best-practices]
+categories: best-practices
+tags: design-by-contract
 ---
 
 [As I said recently][error suppression], I've been working on upgrading a project at work.

@@ -49,11 +49,16 @@ social:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Include other folders
 include:
     - _categories
+    - _tags
     - _pages
+
+exclude:
+  - build
 
 # Nav pages
 header_pages:

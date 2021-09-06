@@ -24,7 +24,7 @@ tagline: My Random Thoughts
 description: >- # this means to ignore newlines until "baseurl:"
   My random thoughts about programming and everything else that interests me.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://devbanana.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.devbanana.me" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: brandon.olivares
 twitter_username: devbanana
 github_username: devbanana

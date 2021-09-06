@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Please Don't Ignore Accessibility
-date: 2021-09-05 18:18:15 -0400
+title: Please Don’t Ignore Accessibility
+date: 2021-09-05 20:54:01 -0400
 categories: accessibility
 ---
 

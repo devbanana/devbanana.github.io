@@ -13,18 +13,22 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
-      {%- if page.categories.size > 0 -%}
-        <span class="post-categories">
-          {%- for category in page.categories -%}
-            <a href="/category/{{ category }}">{{ category }}</a>
-            {% unless forloop.last %},&nbsp;{% endunless %}
-          {%- endfor -%}
-        </span>
-      {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+  </div>
+
+  <div>
+    {%- if page.categories.size > 0 -%}
+      <span class="post-categories">
+        Filed under:
+        {%- for category in page.categories -%}
+          <a href="/category/{{ category }}">{{ category }}</a>
+          {% unless forloop.last %},&nbsp;{% endunless %}
+        {%- endfor -%}
+      </span>
+    {%- endif -%}
   </div>
 
   <div>

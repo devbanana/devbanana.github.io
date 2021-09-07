@@ -6,19 +6,21 @@ categories: accessibility
 tags: aria
 ---
 
-I've been using a service called [IEX Cloud](https://iexcloud.io) for going on two years now. It's an API that allows me to fetch stock information programmatically.
+There's an API that I use that allows me to fetch stock information programmatically.
 
 I just got an email the other day that they failed to charge my card. I realized I had recently changed my credit card and forgot to update it, so I went to log in to update my payment information.
 
 Now as I mentioned [on the about page][about], I'm visually impaired and so use a screen reader. Specifically I use VoiceOver on the Mac.
 
-And when I logged in to the IEX console, it was totally unusable.
+And when I logged in to the account area, it was totally unusable.
 
 This was on Safari, and so luckily I was able to get it to work on Chrome. It was still mostly inaccessible, but I was able to work around the issue.
 
 Unfortunately, accessibility is something most businesses rarely think about. I just had to notify another application I use of accessibility issues they had. It's just not something developers test very often.
 
 Now the thing is, this issue has quite an easy fix. But the question is, will I be able to convince them that the issue is worth fixing?
+
+**Update**: Yes, I was. They fixed it immediately, to their credit. Thanks!
 
 It's such a simple issue, it's worth discussing it in this post, because it really demonstrates how easily a page can be made inaccessible.
 
@@ -78,7 +80,7 @@ So I emailed them with this bug, and with how to fix it.
 
 The question is, will they fix it?
 
-Of course, if they don't, I definitely won't be renewing my subscription with them.
+**Update**: Again, they did fix it. I was very impressed with their response time in addressing this.
 
 But I've had bad experiences with other applications or services that didn't take accessibility seriously.
 

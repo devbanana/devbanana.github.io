@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TypeScript for Statically-Typed JavaScript
-date: 2021-09-22 09:53:20 -0400
+date: 2021-09-23 02:48:30 -0400
 categories: static-typing
 tags: gulp phpstan typescript javascript
 ---

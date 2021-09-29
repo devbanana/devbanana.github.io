@@ -528,14 +528,6 @@ We'll see something like this:
 [19:26:37] Finished 'default' after 1.78 s
 ```
 
-Let's add `dist/` to `.gitignore` so it doesn't show up in git. Our `.gitignore` will look like this:
-
-```
-/build/
-/dist/
-/node_modules/
-```
-
 I'd like to make one final change. When we run `gulp clean`, it'd be nice to also delete the compiled package. So let's change the `clean` task to this:
 
 ```typescript

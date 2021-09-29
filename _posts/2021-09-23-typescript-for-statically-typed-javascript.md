@@ -40,9 +40,9 @@ So, I decided to convert our gulpfile into TypeScript and wanted to document how
 
 In part 1 (this post), I'll give a brief introduction to TypeScript and why you might want to use it. I'll discuss some of its most basic features and how they can help to catch potential bugs in your code.
 
-Part 2 will discuss some more advanced features of TypeScript including type guards, interfaces/custom types, type predicates, generics, and so on.
+[Part 2](https://www.devbanana.me/static-typing/2021/09/28/building-a-typescript-project-with-gulp.html) will be the start of a demo TypeScript project. It'll show how you can write gulp tasks purely in TypeScript without having to compile the code to plain JavaScript first.
 
-In part 3, I'll discuss how I converted our gulpfile to use TypeScript.
+Then in part 3, we'll build on the foundation of part 2 by fleshing out our demo project. This will enable us to discuss some more advanced features of TypeScript including type guards, interfaces/custom types, type predicates, generics, and so on.
 
 ## Introduction to TypeScript
 
@@ -400,6 +400,6 @@ For the code that was used in this post, see [the gist here](https://gist.github
 
 That's it for this post, as it's already gotten to be long enough.
 
-As mentioned, this will be a three-part post, and in my next post I will discuss some more advanced features of TypeScript.
+As mentioned, this will be a three-part post, and in my [next post](https://www.devbanana.me/static-typing/2021/09/28/building-a-typescript-project-with-gulp.html) I'll show how you can write gulp tasks in TypeScript.
 
 Would love to read your comments on the above! As mentioned, i'm quite new to TypeScript, so this is just what I've picked up after some basic fiddling around with it. But, hopefully it is useful anyway.

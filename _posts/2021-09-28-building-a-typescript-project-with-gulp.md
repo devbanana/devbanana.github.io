@@ -564,6 +564,43 @@ Deleted /Users/brandonolivares/code/typescript-example/dist/typescript-example.z
 [19:57:05] Finished 'clean' after 24 ms
 ```
 
+Just so it's all in one place, here is our complete [`gulpfile.ts`](https://github.com/devbanana/typescript-example/blob/dbe29c759e080c28811b343f7a2fd9788b7c7b64/gulpfile.ts):
+
+```typescript
+// noinspection JSUnusedGlobalSymbols
+
+import { dest, series, src, watch } from 'gulp';
+import * as ts from 'gulp-typescript';
+import * as del from 'del';
+import * as zip from 'gulp-zip';
+
+const project = ts.createProject('tsconfig.json');
+
+export function compile(): NodeJS.ReadWriteStream {
+  return project.src().pipe(project()).pipe(dest('build'));
+}
+
+export function monitor(): NodeJS.EventEmitter {
+  return watch('src/**/*.ts', compile);
+}
+
+export function clean(): Promise<void> {
+  return del(['build/**/*.js', 'build/**/*.d.ts', 'dist/*.zip']).then(paths => {
+    paths.forEach(path => console.log(`Deleted ${path}`));
+  });
+}
+
+function createZip(): NodeJS.ReadWriteStream {
+  return src(['package*.json', 'build/**/*.js', 'build/**/*.d.ts'], {
+    base: '.',
+  })
+    .pipe(zip('typescript-example.zip'))
+    .pipe(dest('dist'));
+}
+
+export default series(compile, createZip);
+```
+
 ## Up Next
 
 You can see [the full project as it is so far](https://github.com/devbanana/typescript-example/tree/dbe29c759e080c28811b343f7a2fd9788b7c7b64).

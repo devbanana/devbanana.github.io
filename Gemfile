@@ -33,4 +33,5 @@ gem "webrick", "~> 1.7"
 
 gem "jekyll-redirect-from", "~> 0.16.0"
 
-gem "gemoji", "~> 3.0"
+
+gem "jemoji", "~> 0.12.0"

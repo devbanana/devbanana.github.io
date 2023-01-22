@@ -775,7 +775,7 @@ OK (5 tests, 6 assertions)
 
 Nice! Everything works as it should!
 
-## Optimize the Method
+### Optimize the Method
 
 Now let's see if we can clean it up.
 
@@ -1493,6 +1493,8 @@ You can view the final state of this application as of this writing by [visiting
 As you can see, GPT-3 has some really powerful capabilities when it comes to programming.
 
 However, in my opinion you have to know how to guide it. You either have to know how to explain it clearly enough, or to break it down into small enough steps that it doesn't get confused.
+
+It seemed to do better when I gave it a stub to operate from, and it did a great job copying my code style.
 
 I also think having unit tests to guide the process really helped, since I had a clear idea of success.
 

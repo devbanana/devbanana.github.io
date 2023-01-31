@@ -2,7 +2,7 @@
 layout: post
 title: Using GPT-3 as a Programming Assistant
 categories: artificial-intelligence
-tags: symfony, console
+tags: symfony console
 ---
 
 Well, I'm back from a hiatus of over a year, hopefully to add some more useful content to this blog.

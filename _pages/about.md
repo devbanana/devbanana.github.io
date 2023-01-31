@@ -38,13 +38,14 @@ then TDD to drive the development of the low-level units (domain-layer objects m
 
 Ironically seeing as I'm a PHP developer, i believe in the importance of static typing.
 Loose typing allows for bugs to easily be introduced.
-So I make heavy use of [PHPStan] and in code I'm writing from scratch, aim for passing the maximum level of analysis.
+So I make heavy use of [Psalm] and in code I'm writing from scratch, aim for passing the maximum level of analysis.
 
 ## My Favorite Tools
 
 Here is a list of the tools I make heavy use of:
 
 * [PHPUnit]
+* [Behat]
 * [Psalm]
 * [PHP CS Fixer], preferably using my [default rules]
 
@@ -53,6 +54,7 @@ Here is a list of the tools I make heavy use of:
 In 2020 I also started [Possible Promise Financial], a business offering bookkeeping and personal financial coaching. I'm a QuickBooks Certified ProAdvisor and am in the process of becoming a certified YNAB coach.
 
 [PHPUnit]: https://github.com/sebastianbergmann/phpunit
+[Behat]: https://github.com/Behat/Behat
 [Psalm]: https://github.com/vimeo/psalm
 [PHP CS Fixer]: https://github.com/FriendsOfPHP/PHP-CS-Fixer
 [default rules]: https://github.com/devbanana/php-cs-fixer-config

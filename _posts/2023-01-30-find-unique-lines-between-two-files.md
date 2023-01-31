@@ -9,6 +9,8 @@ Today I needed to find the lines that were present in one file but not in anothe
 
 The context was that I had noticed I had a new subscriber to my mailing list but couldn't figure out who it was. So I exported the list prior to the sign-up, and the list after the sign-up, and wanted to see which line in the second file was new.
 
+No, I couldn't just sort it by date in my mailing list provider for reasons I won't go into here. Just trust that it was necessary. 😛
+
 I found an easy solution that I wanted to log here for at least my own future reference. It came in the form of the `comm` command, and it was as simple as this:
 
 ```bash

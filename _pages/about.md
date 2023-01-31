@@ -45,17 +45,18 @@ So I make heavy use of [PHPStan] and in code I'm writing from scratch, aim for p
 Here is a list of the tools I make heavy use of:
 
 * [PHPUnit]
-* [Behat]
-* [PHPStan]
-* [Rector]
+* [Psalm]
 * [PHP CS Fixer], preferably using my [default rules]
 
+## Other Places to Find Me
+
+In 2020 I also started [Possible Promise Financial], a business offering bookkeeping and personal financial coaching. I'm a QuickBooks Certified ProAdvisor and am in the process of becoming a certified YNAB coach.
+
 [PHPUnit]: https://github.com/sebastianbergmann/phpunit
-[Behat]: https://github.com/Behat/Behat
-[PHPStan]: https://github.com/phpstan/phpstan
-[Rector]: https://github.com/rectorphp/rector
+[Psalm]: https://github.com/vimeo/psalm
 [PHP CS Fixer]: https://github.com/FriendsOfPHP/PHP-CS-Fixer
 [default rules]: https://github.com/devbanana/php-cs-fixer-config
+[Possible Promise Financial]: https://www.possiblepromise.com
 
 *[BDD]: Behavior-Driven Development
 *[TDD]: Test-Driven Development
